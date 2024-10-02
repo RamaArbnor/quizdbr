@@ -6,6 +6,7 @@ import QuestionPage from './pages/question';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Quiz from './pages/quiz';
+import All from './pages/all';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +16,7 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/question" element={<QuestionPage />} />
         <Route path="/quiz" element={<Quiz />} />
+        <Route path="/all" element={<All />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

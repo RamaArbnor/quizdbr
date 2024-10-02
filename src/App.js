@@ -3,7 +3,7 @@ import './App.css';
 import { useNavigate } from 'react-router-dom'; 
 
 function App() {
-  
+
   const navigate = useNavigate();
 
   return (
@@ -12,7 +12,7 @@ function App() {
         <h1>Databricks Machine Learning</h1>
         <div className="options-container">
           <button className="option-button" onClick={() => navigate('/quiz')}>Take a Quiz</button>
-          <button className="option-button">All Questions</button>
+          <button className="option-button" onClick={() => navigate('/all')}>All Questions</button>
         </div>
       </header>
     </div>
